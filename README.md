@@ -16,7 +16,7 @@
 
 ## Демо
 
-[![asciicast](https://asciinema.org/a/ВАШ_ID.svg)](https://asciinema.org/a/ВАШ_ID)
+[![asciicast](https://asciinema.org/a/GSTMPWz2fmpohZOI.svg)](https://asciinema.org/a/GSTMPWz2fmpohZOI)
 
 ## Установка
 

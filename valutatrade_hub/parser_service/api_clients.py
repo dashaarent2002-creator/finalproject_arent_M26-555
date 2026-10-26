@@ -109,7 +109,7 @@ class ExchangeRateApiClient(BaseApiClient):
             raise ApiRequestError(data.get("error-type", "неизвестная ошибка"))
         rates = {}
         for code in self.config.FIAT_CURRENCIES:
-            value = data.get("rates", {}).get(code)
+            value = (data.get("conversion_rates") or data.get("rates", {})).get(code)
             # API отдаёт «1 USD = N EUR», а нам нужно «1 EUR = M USD»
             if isinstance(value, (int, float)) and value > 0:
                 rates[f"{code}_{base}"] = 1 / float(value)
